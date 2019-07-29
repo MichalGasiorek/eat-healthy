@@ -1,0 +1,22 @@
+{
+  "name": "eat-healthy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichalGasiorek/eat-healthy.git"
+  },
+  "author": "Michał Gąsiorek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichalGasiorek/eat-healthy/issues"
+  },
+  "homepage": "https://github.com/MichalGasiorek/eat-healthy#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
