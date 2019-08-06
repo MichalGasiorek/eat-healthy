@@ -1,5 +1,5 @@
 /* For imports */
-@import './modules//general.css';
 @import "normalize.css";
+@import './modules//general.css';
 @import './modules/variables.css';
 @import './modules/hero.css';

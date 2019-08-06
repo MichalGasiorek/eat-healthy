@@ -1,10 +1,4 @@
 /* For imports */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-    font-family: 'Montserrat', sans-serif;
-}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -281,8 +275,18 @@ template {
 [hidden] {
   display: none;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Montserrat', sans-serif;
+}
+.hero {
+    position: relative;
+    top: 0;
+    left: 0;
+}
 .hero__nav {
-        position: absolute;
         height: 40px;
         width: 100%;
         overflow-x: hidden;
@@ -322,13 +326,6 @@ template {
 .hero__nav--link:last-child {
             maring-right: 0;
         }
-.hero__image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%; 
-    }
 .hero__image--overlay {
             background: rgba(6, 129, 160, .6);
             position: absolute;

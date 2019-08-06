@@ -1,6 +1,9 @@
-.hero{
+.hero {
+    position: relative;
+    top: 0;
+    left: 0;
+
     &__nav {
-        position: absolute;
         height: 40px;
         width: 100%;
         overflow-x: hidden;
@@ -49,12 +52,6 @@
     }
 
     &__image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-
         &--overlay {
             background: rgba(6, 129, 160, .6);
             position: absolute;
