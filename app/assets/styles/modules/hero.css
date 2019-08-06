@@ -1,0 +1,118 @@
+.hero{
+    &__nav {
+        position: absolute;
+        height: 40px;
+        width: 100%;
+        overflow-x: hidden;
+
+        &--links {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            float: right;
+        }
+        
+        &--link{
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin: auto 100px;  
+            cursor: pointer; 
+            letter-spacing: 2px;
+            font-weight: 300;
+        }
+
+        &--link::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 0;
+            background: $mainOrange;
+            z-index: -1;
+            transition: width .2s;
+            
+        }
+
+        &--link:hover::before{
+            width: 5%;
+        }
+
+        &--link:last-child:hover::before{
+            width: 7%;
+        }
+
+
+        &--link:last-child {
+            maring-right: 0;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+
+        &--overlay {
+            background: rgba(6, 129, 160, .6);
+            position: absolute;
+            top: -3px;
+            left: 0;
+            height: 100%;
+            width: 63%;
+        } 
+    }
+
+    &__logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+
+        h4 {
+            font-size: 5rem;
+            letter-spacing: 1.5rem;
+        }
+
+        hr {
+            height: 10px;
+            background-color: rgba(189, 156, 36, .7);
+            border: none;
+            width: 100%;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 8rem;
+            margin: 0;
+            font-weight: 300;
+        }
+    }
+
+    &__call-to-action {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        color: white;
+        text-decoration: none;
+        background: $mainBlue;
+        padding: 20px 80px;
+        box-shadow: -8px 8px 5px 1px rgba(0, 0, 0, .5);
+        transition: box-shadow .3s;
+        font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 5px;
+        border-radius: 8px;
+    }
+
+    &__call-to-action:hover {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+    }
+}
+

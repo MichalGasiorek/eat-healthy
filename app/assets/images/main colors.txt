@@ -1,0 +1,3 @@
+Hero overlay: #0681a0 60% Opacity
+
+Logo HR and CTA: #bd9c24 70%Opacity

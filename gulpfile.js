@@ -14,6 +14,12 @@ gulp.task('styles', () => {
     .pipe(gulp.dest('./app/temp/styles'));
 });
 
+gulp.task('cssInject', ['styles'], () => {
+    return gulp.src('./app/temp/styles/styles.css')
+    .pipe(browserSync.stream());
+});
+
+
 gulp.task('watch', () => {
 
     browserSync.init({
@@ -31,8 +37,4 @@ gulp.task('watch', () => {
     });   
 });
 
-gulp.task('cssInject', ['styles'], () => {
-    return gulp.src('./app/temp/styles/styles.css')
-    .pipe(browserSync.stream());
-});
 
