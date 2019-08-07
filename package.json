@@ -1,7 +1,6 @@
 {
   "name": "eat-healthy",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,5 +27,6 @@
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.1.2",
     "postcss-simple-vars": "^5.0.2"
-  }
+  },
+  "description": ""
 }
